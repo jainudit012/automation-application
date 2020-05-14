@@ -47,7 +47,7 @@ app.get('/login', async function(req, res) {
     
     browser = await puppeteer.launch({
         headless: false,
-        args: ['--no-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     page = await browser.newPage();
 
