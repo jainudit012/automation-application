@@ -47,7 +47,7 @@ app.get('/login', async function(req, res) {
     
     browser = await puppeteer.launch({
         headless: false,
-        executablePath:'/home/pranav/Desktop/Opscale/automate/automation-application/node_modules/puppeteer/.local-chromium/linux-599821/chrome-linux',
+        executablePath:'/home/pranav/Desktop/Opscale/automate/automation-application/node_modules/puppeteer/.local-chromium/linux-706915/chrome-linux',
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     page = await browser.newPage();
